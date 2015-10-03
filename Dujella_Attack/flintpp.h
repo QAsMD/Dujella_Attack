@@ -534,7 +534,6 @@ class LINT
 
   LINT_ERRORS Get_Warning_Status (void);
 
- private:
   // Pointer to type CLINT
   clint* n_l;
 
