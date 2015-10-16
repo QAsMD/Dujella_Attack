@@ -79,16 +79,19 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dujell_Attack.h" />
     <ClInclude Include="flint.h" />
     <ClInclude Include="flintpp.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dujella_Attack.cpp" />
     <ClCompile Include="flint.c" />
     <ClCompile Include="flintcpp.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
