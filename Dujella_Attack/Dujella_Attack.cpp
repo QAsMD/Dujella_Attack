@@ -72,6 +72,9 @@ int _tmain(int argc, _TCHAR* argv[])
 			for (unsigned int counter = 0; counter < keys.size(); counter++)
 			{
 				status = Prime_Number_Generator(keys[counter], &P, &Q);
+
+				cout << "q-p = " << Q - P << endl;
+				LINT mistery_D = LINT(10000);
 				if (status != SUCCESS)
 					_CrtDbgBreak();
 				origin_P = P;
@@ -81,7 +84,12 @@ int _tmain(int argc, _TCHAR* argv[])
 					_CrtDbgBreak();
 
 				int time = GetTickCount();
-				status = Dujella_Attack(E, N, &P, &Q, &D);
+
+				//status = Dujella_Attack(E, N, &P, &Q, &D);
+				D = LINT(1);
+				P = LINT(1);
+				Q = LINT(1);
+
 				if (status != SUCCESS)
 					_CrtDbgBreak();
 #ifdef DBG_PRINT
@@ -89,14 +97,15 @@ int _tmain(int argc, _TCHAR* argv[])
 				cout << "P is " << P.decstr() << endl;
 				cout << "Q is " << Q.decstr() << endl;
 #endif
-				cout << "\norigin P: " << origin_P.decstr() << endl;
+				//cout << "\norigin P: " << origin_P.decstr() << endl;
 				if (origin_D == D)
 					cout << "For key length " << keys[counter] << " Vinere succedeed in " << GetTickCount() - time << " ticks" << endl;
 				if ((origin_P == P) && (origin_Q == Q))
 					cout << "Primes found correctly" << endl;
 
+
 #ifdef KEY_TXT_PRINT				
-				rez += E.decstr();
+				rez += E.decstr();	
 				rez += "\n";
 				rez += N.decstr();
 				rez += "\n";

@@ -75,7 +75,8 @@ ERROR_CODE Prime_Number_Generator(
 	__out LINT *Q)
 {
 	*P = nextprime(randl(length/2) + 1, 1);
-	*Q = nextprime(randl(length/2) + 1, 1);
+	*Q = nextprime(*P + (*P).root()*(*P).root().root(), 1);
+
 #ifdef DBG_PRINT
 	cout << "Finished generating primes" << endl;
 	cout << "P: " << (*P) << endl;
