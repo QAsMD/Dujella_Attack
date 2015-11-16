@@ -30,10 +30,10 @@
     <ClInclude Include="flintpp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Dujell_Attack.h">
+    <ClInclude Include="utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="Dujella_Attack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

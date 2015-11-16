@@ -79,7 +79,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dujell_Attack.h" />
+    <ClInclude Include="Dujella_Attack.h" />
     <ClInclude Include="flint.h" />
     <ClInclude Include="flintpp.h" />
     <ClInclude Include="stdafx.h" />
